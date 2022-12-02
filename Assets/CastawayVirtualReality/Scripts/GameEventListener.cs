@@ -3,28 +3,31 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class GameEventListener : MonoBehaviour
-{
-    // Allows the event to be manually connected to other scripts and objects
-    public GameEvent gameEvent;
-    public UnityEvent onEventTriggered;
-
-    // Subscribes a listener to an event
-    private void OnEnable()
+namespace GameEventSystem
+{ 
+    public class GameEventListener : MonoBehaviour
     {
-        gameEvent.AddListener(this);
-    }
+        // Allows the event to be manually connected to other scripts and objects
+        public GameEvent gameEvent;
+        public UnityEvent onEventTriggered;
 
-    // Unsubcribes a listener to an event
-    private void OnDisable()
-    {
-        gameEvent.RemoveListener(this);
-    }
+        // Subscribes a listener to an event
+        private void OnEnable()
+        {
+            gameEvent.AddListener(this);
+        }
 
-    // Invokes the event when called
-    public void OnEventTriggered()
-    {
-        onEventTriggered.Invoke();
+        // Unsubcribes a listener to an event
+        private void OnDisable()
+        {
+            gameEvent.RemoveListener(this);
+        }
+
+        // Invokes the event when called
+        public void OnEventTriggered()
+        {
+            onEventTriggered.Invoke();
+        }
     }
 }
 
