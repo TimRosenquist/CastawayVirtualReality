@@ -8072,15 +8072,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 91be86bda5f32eb4fb4356a0dca4385c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 392.86
+      value: 399.51
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 91be86bda5f32eb4fb4356a0dca4385c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 137.51
+      value: 138.98
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 91be86bda5f32eb4fb4356a0dca4385c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 579.65
+      value: 572.02
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 91be86bda5f32eb4fb4356a0dca4385c, type: 3}
       propertyPath: m_LocalRotation.w
@@ -29270,6 +29270,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Island Terrain
       objectReference: {fileID: 0}
+    - target: {fileID: 226509395399838227, guid: 19cbdf3d3f2dfd946b2d2cfc973b68f2, type: 3}
+      propertyPath: m_TerrainData
+      value: 
+      objectReference: {fileID: 15600000, guid: 30ff7ea895473664f977a6b7f26b5e4c, type: 2}
+    - target: {fileID: 226509395399838236, guid: 19cbdf3d3f2dfd946b2d2cfc973b68f2, type: 3}
+      propertyPath: m_TerrainData
+      value: 
+      objectReference: {fileID: 15600000, guid: 30ff7ea895473664f977a6b7f26b5e4c, type: 2}
     - target: {fileID: 226509395399838237, guid: 19cbdf3d3f2dfd946b2d2cfc973b68f2, type: 3}
       propertyPath: m_RootOrder
       value: 11
