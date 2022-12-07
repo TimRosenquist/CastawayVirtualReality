@@ -19,7 +19,7 @@ public class PlayerSprint : MonoBehaviour
         [SerializeField]
         private float lerpDuration;
         [SerializeField]
-        private float startValue;
+        
         private float endValue = 8;
         private float valueToLerp;
 
@@ -37,7 +37,7 @@ public class PlayerSprint : MonoBehaviour
         {
             if (timeElapsed < lerpDuration)
             {
-                valueToLerp = Mathf.Lerp(startValue, endValue, timeElapsed / lerpDuration);
+                valueToLerp = Mathf.Lerp(moveProvider.moveSpeed, endValue, timeElapsed / lerpDuration);
                 timeElapsed += Time.deltaTime;
             }
             else valueToLerp = endValue;
