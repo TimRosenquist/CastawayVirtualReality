@@ -15,11 +15,11 @@ public class PlayerSprint : MonoBehaviour
         [SerializeField] InputActionAsset inputAction;
         private InputAction sprintAction;
 
+        //Lerp variables
         private float timeElapsed;
         [SerializeField]
         private float lerpDuration;
         [SerializeField]
-        
         private float endValue = 8;
         private float valueToLerp;
 
@@ -32,7 +32,6 @@ public class PlayerSprint : MonoBehaviour
             sprintAction.performed += SprintAction_performed;
             sprintAction.canceled += SprintAction_canceled;
         }
-
         private void Update()
         {
             if (timeElapsed < lerpDuration)
@@ -42,16 +41,15 @@ public class PlayerSprint : MonoBehaviour
             }
             else valueToLerp = endValue;
         }
+        //Calls action when button pressed
         private void SprintAction_performed(InputAction.CallbackContext obj)
         {
             moveProvider.moveSpeed = valueToLerp;
-            
         }
+        //Cancel action when button released
         private void SprintAction_canceled(InputAction.CallbackContext obj)
         {
             moveProvider.moveSpeed = initialMoveSpeed;
         }
-
-
     }
 }
