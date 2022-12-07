@@ -7399,7 +7399,7 @@ PrefabInstance:
     - target: {fileID: 1939820222701281846, guid: 82fa5a7fdbca7d7499193160c4e87171, type: 3}
       propertyPath: m_Camera
       value: 
-      objectReference: {fileID: 1011961925}
+      objectReference: {fileID: 0}
     - target: {fileID: 1939820222701281847, guid: 82fa5a7fdbca7d7499193160c4e87171, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -15250,7 +15250,7 @@ PrefabInstance:
     - target: {fileID: 7964224587920497025, guid: 9bea37a46016da449acb7b5d4907409e, type: 3}
       propertyPath: refToSpawnedObject
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1011961925}
     - target: {fileID: 7964224587920497026, guid: 9bea37a46016da449acb7b5d4907409e, type: 3}
       propertyPath: m_Name
       value: SpawnPoint
@@ -29942,11 +29942,31 @@ PrefabInstance:
       objectReference: {fileID: 1288884354}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 11ef4c36c90a5b144bf39141fcc4ac5c, type: 3}
---- !u!20 &1011961925 stripped
-Camera:
-  m_CorrespondingSourceObject: {fileID: 546358690640837249, guid: 11ef4c36c90a5b144bf39141fcc4ac5c, type: 3}
+--- !u!1 &1011961925 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3228408878540834324, guid: 11ef4c36c90a5b144bf39141fcc4ac5c, type: 3}
   m_PrefabInstance: {fileID: 1011961924}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1011961926 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3228408878029482373, guid: 11ef4c36c90a5b144bf39141fcc4ac5c, type: 3}
+  m_PrefabInstance: {fileID: 1011961924}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1011961927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1011961926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76cb99130838b494abd4a33635e422f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputAction: {fileID: -944628639613478452, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  lerpDuration: 2
+  endValue: 8
 --- !u!1001 &1025212925
 PrefabInstance:
   m_ObjectHideFlags: 0
