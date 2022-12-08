@@ -7,11 +7,11 @@ namespace ChoppingTrees
 {
     public class TreeCutting : MonoBehaviour
     {
-        [SerializeField] public GameObject tree; // the tree
+        [SerializeField] private GameObject tree; // the tree
+        [SerializeField] private GameObject log; // the log
         [SerializeField] public GameObject axe; // the axe
-        [SerializeField] public GameObject log; // the log
         [SerializeField] public float swingSpeed; // the minimum required swingspeed of the axe
-        public int cutCount; // the number of times the tree has been hit
+        private int cutCount; // the number of times the tree has been hit
         public AudioClip ChopSound; // the sound to play when the axe hits the tree
 
         AudioSource audioSource;
@@ -48,8 +48,8 @@ namespace ChoppingTrees
 
         void CutDownTree()
         {
-            Instantiate(log, tree.transform.position, tree.transform.rotation);
-            Destroy(tree);
+            tree.SetActive(false);
+            log.SetActive(true);
         }
     }
 }
