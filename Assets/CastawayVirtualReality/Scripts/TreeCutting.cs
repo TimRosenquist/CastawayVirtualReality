@@ -12,7 +12,7 @@ namespace ChoppingTrees
         [SerializeField] public GameObject log; // the log
         [SerializeField] public float swingSpeed; // the minimum required swingspeed of the axe
         public int cutCount; // the number of times the tree has been hit
-        public AudioClip chopSound; // the sound to play when the axe hits the tree
+        public AudioClip ChopSound; // the sound to play when the axe hits the tree
 
         AudioSource audioSource;
 
@@ -31,7 +31,7 @@ namespace ChoppingTrees
                 if (axe.GetComponent<Rigidbody>().velocity.magnitude >= swingSpeed)
                 {
                     // play the chop sound
-                    audioSource.PlayOneShot(chopSound);
+                    audioSource.PlayOneShot(ChopSound);
 
                     // increase the cut count
                     cutCount++;
