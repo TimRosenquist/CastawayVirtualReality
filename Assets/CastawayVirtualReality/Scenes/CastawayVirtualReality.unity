@@ -7744,6 +7744,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 900012470783344632, guid: 11ef4c36c90a5b144bf39141fcc4ac5c, type: 3}
+      propertyPath: inputAction
+      value: 
+      objectReference: {fileID: -944628639613478452, guid: c348712bda248c246b8c49b3db54643f, type: 3}
     - target: {fileID: 900012470783344634, guid: 11ef4c36c90a5b144bf39141fcc4ac5c, type: 3}
       propertyPath: m_Name
       value: XR Origin
@@ -7903,6 +7907,11 @@ MonoBehaviour:
       m_SingletonActionBindings: []
       m_Flags: 0
     m_Reference: {fileID: -8525429354371678379, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+--- !u!1 &256013340 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 900012470783344634, guid: 11ef4c36c90a5b144bf39141fcc4ac5c, type: 3}
+  m_PrefabInstance: {fileID: 256013330}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &260268899
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15524,7 +15533,7 @@ PrefabInstance:
     - target: {fileID: 7964224587920497025, guid: 9bea37a46016da449acb7b5d4907409e, type: 3}
       propertyPath: refToSpawnedObject
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 256013340}
     - target: {fileID: 7964224587920497026, guid: 9bea37a46016da449acb7b5d4907409e, type: 3}
       propertyPath: m_Name
       value: SpawnPoint
