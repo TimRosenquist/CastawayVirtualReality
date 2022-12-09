@@ -15,6 +15,9 @@ namespace SoundTriggers
     //String that defines objects Tag
     public string targetTag;
 
+    //Game Object that trigger the sound
+    //[SerializeField] GameObject soundTriggerObject;
+
     void Start()
     {
         source = GetComponent<AudioSource>();
@@ -26,6 +29,7 @@ namespace SoundTriggers
         if (other.CompareTag(targetTag))
         {
             source.PlayOneShot(clip);
+            //soundTriggerObject.SetActive(false);
         }
     }
 }
