@@ -3274,7 +3274,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5210877528114774312}
   m_Layer: 0
-  m_Name: Invinsible walls islands 2
+  m_Name: Invinible walls West
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
