@@ -24,7 +24,6 @@ namespace CastawayVirtualReality
             if (collision.gameObject == true)
             {
                 audioSource.PlayOneShot(audioClip);
-                Debug.Log("Hit");
             }
         }
     }
