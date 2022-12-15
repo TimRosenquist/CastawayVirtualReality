@@ -1555,6 +1555,34 @@ public partial class @XRIDefaultInputActions : IInputActionCollection2, IDisposa
                     ""isPartOfComposite"": false
                 }
             ]
+        },
+        {
+            ""name"": ""Inventory"",
+            ""id"": ""98a4082c-b6f7-4c98-8186-293b2cb4fa8a"",
+            ""actions"": [
+                {
+                    ""name"": ""InventoryButton"",
+                    ""type"": ""Button"",
+                    ""id"": ""64161a81-5ffc-4c8f-a6df-372efc54290d"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""74f30d7c-2c02-46f3-acd1-3a39a98cf220"",
+                    ""path"": ""<XRController>{LeftHand}/primaryButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""InventoryButton"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
         }
     ],
     ""controlSchemes"": [
@@ -1686,6 +1714,9 @@ public partial class @XRIDefaultInputActions : IInputActionCollection2, IDisposa
         m_XRIUI_ScrollWheel = m_XRIUI.FindAction("ScrollWheel", throwIfNotFound: true);
         m_XRIUI_MiddleClick = m_XRIUI.FindAction("MiddleClick", throwIfNotFound: true);
         m_XRIUI_RightClick = m_XRIUI.FindAction("RightClick", throwIfNotFound: true);
+        // Inventory
+        m_Inventory = asset.FindActionMap("Inventory", throwIfNotFound: true);
+        m_Inventory_InventoryButton = m_Inventory.FindAction("InventoryButton", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -2357,6 +2388,39 @@ public partial class @XRIDefaultInputActions : IInputActionCollection2, IDisposa
         }
     }
     public XRIUIActions @XRIUI => new XRIUIActions(this);
+
+    // Inventory
+    private readonly InputActionMap m_Inventory;
+    private IInventoryActions m_InventoryActionsCallbackInterface;
+    private readonly InputAction m_Inventory_InventoryButton;
+    public struct InventoryActions
+    {
+        private @XRIDefaultInputActions m_Wrapper;
+        public InventoryActions(@XRIDefaultInputActions wrapper) { m_Wrapper = wrapper; }
+        public InputAction @InventoryButton => m_Wrapper.m_Inventory_InventoryButton;
+        public InputActionMap Get() { return m_Wrapper.m_Inventory; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(InventoryActions set) { return set.Get(); }
+        public void SetCallbacks(IInventoryActions instance)
+        {
+            if (m_Wrapper.m_InventoryActionsCallbackInterface != null)
+            {
+                @InventoryButton.started -= m_Wrapper.m_InventoryActionsCallbackInterface.OnInventoryButton;
+                @InventoryButton.performed -= m_Wrapper.m_InventoryActionsCallbackInterface.OnInventoryButton;
+                @InventoryButton.canceled -= m_Wrapper.m_InventoryActionsCallbackInterface.OnInventoryButton;
+            }
+            m_Wrapper.m_InventoryActionsCallbackInterface = instance;
+            if (instance != null)
+            {
+                @InventoryButton.started += instance.OnInventoryButton;
+                @InventoryButton.performed += instance.OnInventoryButton;
+                @InventoryButton.canceled += instance.OnInventoryButton;
+            }
+        }
+    }
+    public InventoryActions @Inventory => new InventoryActions(this);
     private int m_GenericXRControllerSchemeIndex = -1;
     public InputControlScheme GenericXRControllerScheme
     {
@@ -2459,5 +2523,9 @@ public partial class @XRIDefaultInputActions : IInputActionCollection2, IDisposa
         void OnScrollWheel(InputAction.CallbackContext context);
         void OnMiddleClick(InputAction.CallbackContext context);
         void OnRightClick(InputAction.CallbackContext context);
+    }
+    public interface IInventoryActions
+    {
+        void OnInventoryButton(InputAction.CallbackContext context);
     }
 }
