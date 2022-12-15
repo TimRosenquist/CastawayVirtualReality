@@ -19167,7 +19167,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 601402924}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -359, y: -196.49712, z: 159.7}
+  m_LocalPosition: {x: -348.09088, y: -203.61435, z: 171.01299}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4139481814810475245}
@@ -19193,8 +19193,8 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 0
-  MinDistance: 33.7
-  MaxDistance: 38.55481
+  MinDistance: 39
+  MaxDistance: 46
   Pan2D: 0
   rolloffMode: 2
   BypassEffects: 0
@@ -37369,7 +37369,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1280378043}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -371.6, y: -214, z: 83.1}
+  m_LocalPosition: {x: -347.09088, y: -214, z: 80.01296}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4139481814810475245}
@@ -37395,8 +37395,8 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 0
-  MinDistance: 27.525696
-  MaxDistance: 39.61374
+  MinDistance: 44
+  MaxDistance: 52
   Pan2D: 0
   rolloffMode: 2
   BypassEffects: 0
@@ -55287,7 +55287,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1965178670}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -264.8, y: -214, z: 63.1}
+  m_LocalPosition: {x: -270.09088, y: -214, z: 84.01296}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4139481814810475245}
@@ -55313,8 +55313,8 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 0
-  MinDistance: 70.51141
-  MaxDistance: 98.43509
+  MinDistance: 77
+  MaxDistance: 86
   Pan2D: 0
   rolloffMode: 2
   BypassEffects: 0
