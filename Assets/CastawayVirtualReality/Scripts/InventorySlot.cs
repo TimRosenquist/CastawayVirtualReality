@@ -11,9 +11,6 @@ namespace GameEventSystem
         IXRSelectInteractable objInSocket;
         GameObject obj;
 
-        [SerializeField]
-        private GameObject MaterialsEventManager;
-
         public GameEvent logCountIncrease;
         public GameEvent logCountDecrease;
         public GameEvent RopeCountIncrease;
