@@ -1533,6 +1533,34 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "Inventory",
+            "id": "98a4082c-b6f7-4c98-8186-293b2cb4fa8a",
+            "actions": [
+                {
+                    "name": "InventoryButton",
+                    "type": "Button",
+                    "id": "64161a81-5ffc-4c8f-a6df-372efc54290d",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "74f30d7c-2c02-46f3-acd1-3a39a98cf220",
+                    "path": "<XRController>{LeftHand}/primaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "InventoryButton",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": [

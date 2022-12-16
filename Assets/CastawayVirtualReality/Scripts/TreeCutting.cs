@@ -10,8 +10,6 @@ namespace ChoppingTrees
         [SerializeField] private GameObject tree; // the tree
         [SerializeField] private GameObject log; // the log
         [SerializeField] public GameObject axe; // the axe
-        [SerializeField] public float swingSpeed; // the minimum required swingspeed of the axe
-        public float axeVelocity;
         private int cutCount; // the number of times the tree has been hit
         public AudioClip ChopSound; // the sound to play when the axe hits the tree
         private Rigidbody rigidBody;
@@ -28,31 +26,20 @@ namespace ChoppingTrees
         {
             // check if the axe is colliding with the tree
             if (collision.gameObject.tag == "Axe")
-            {
-                // check if the axe is being swung fast enough
-                if (axeVelocity >= swingSpeed)
-                {
-                    // play the chop sound
-                    audioSource.PlayOneShot(ChopSound);
+            {                    
+                // play the chop sound
+                audioSource.PlayOneShot(ChopSound);
 
-                    Debug.Log("Hit!");
-                    // increase the cut count
-                    cutCount++;
+                // increase the cut count
+                cutCount++;
 
                     // check if the tree has been hit enough times to be cut down
-                    if (cutCount >= 4)
+                    if (cutCount >= 6)
                     {
                         // cut down the tree
                         CutDownTree();
-                    }
-                }
+                    }                
             }
-        }
-
-        //Continous read of the axes velocity
-        private void Update()
-        {
-            axeVelocity = rigidBody.velocity.magnitude;
         }
 
         void CutDownTree()
