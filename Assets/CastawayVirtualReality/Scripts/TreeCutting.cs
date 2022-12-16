@@ -34,7 +34,7 @@ namespace ChoppingTrees
                 cutCount++;
 
                     // check if the tree has been hit enough times to be cut down
-                    if (cutCount >= 4)
+                    if (cutCount >= 6)
                     {
                         // cut down the tree
                         CutDownTree();
