@@ -13,14 +13,12 @@ namespace GameEventSystem
 
         private void OnTriggerEnter(Collider other)
         {
-            DisplayDisconnected.TriggerEvent();
-            //Debug.Log("in zone");
+            if (other.gameObject.name == "MapTablet v.2") DisplayDisconnected.TriggerEvent();
         }
 
         private void OnTriggerExit(Collider other)
         {
-            DisplayConnected.TriggerEvent();
-            //Debug.Log("not in zone");
+            if (other.gameObject.name == "MapTablet v.2") DisplayConnected.TriggerEvent();
         }
     }
 }
