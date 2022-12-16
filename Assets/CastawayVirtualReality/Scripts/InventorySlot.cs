@@ -3,60 +3,69 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
-public class InventorySlot : MonoBehaviour
+namespace GameEventSystem
 {
-    XRSocketInteractor socket;
-    IXRSelectInteractable objInSocket;
-    GameObject obj;
-    //bool hasParent;
-    //bool active;
-
-    //[SerializeField]
-    //private GameObject checkIfActive;
-
-    void Start()
+    public class InventorySlot : MonoBehaviour
     {
-        socket = GetComponentInParent<XRSocketInteractor>();
-        //active = GetComponent<InventoryVR>().isActive;
-        //hasParent = false;
-    }
+        XRSocketInteractor socket;
+        IXRSelectInteractable objInSocket;
+        GameObject obj;
 
-    public void SlotCheck()
-    {
-        objInSocket = socket.GetOldestInteractableSelected();
+        [SerializeField]
+        private GameObject MaterialsEventManager;
 
-        obj = objInSocket.transform.gameObject;
+        public GameEvent logCountIncrease;
+        public GameEvent logCountDecrease;
+        public GameEvent RopeCountIncrease;
+        public GameEvent RopeCountDecrease;
 
-        //active = checkIfActive.GetComponent<InventoryVR>().isActive;
-        //&& active == true
-        //if (hasParent == false)
-        //{
+        private int logCount;
+
+        void Start()
+        {
+            socket = GetComponentInParent<XRSocketInteractor>();
+        }
+
+        public void OnSelectEntered()
+        {
+            objInSocket = socket.GetOldestInteractableSelected();
+
+            obj = objInSocket.transform.gameObject;
+
             obj.transform.SetParent(transform);
-        //    hasParent = true;
-        //}
 
-        transform.localPosition = obj.GetComponent<Item>().slotPosition;
-        transform.localEulerAngles = obj.GetComponent<Item>().slotRotation;
-        transform.localScale = obj.GetComponent<Item>().slotScale;
+            transform.localPosition = obj.GetComponent<Item>().slotPosition;
+            transform.localEulerAngles = obj.GetComponent<Item>().slotRotation;
+            transform.localScale = obj.GetComponent<Item>().slotScale;
 
-        //Debug.Log(obj.transform.name);
-    }
+            if (obj.GetComponent<Item>().isLog == true)
+            {
+                logCountIncrease.TriggerEvent();
+            }
 
-    public void OnExit()
-    {
-        obj = objInSocket.transform.gameObject;
+            if (obj.GetComponent<Item>().isRope == true)
+            {
+                RopeCountIncrease.TriggerEvent();
+            }
+        }
 
-        //active = checkIfActive.GetComponent<InventoryVR>().isActive;
-        //if (hasParent == true)
-        //{
+        public void OnSelectExited()
+        {
+            obj = objInSocket.transform.gameObject;
+
             obj.transform.SetParent(null);
-        //    hasParent = false;
-        //}
 
-        //transform.localScale = new Vector3(1, 1, 1);
+            obj.transform.localScale = obj.GetComponent<Item>().originalScale;
 
-        obj.transform.localScale = obj.GetComponent<Item>().originalScale;
+            if (obj.GetComponent<Item>().isLog == true)
+            {
+                logCountDecrease.TriggerEvent();
+            }
 
-        //Debug.Log("exit");
+            if (obj.GetComponent<Item>().isRope == true)
+            {
+                RopeCountDecrease.TriggerEvent();
+            }
+        }
     }
 }
