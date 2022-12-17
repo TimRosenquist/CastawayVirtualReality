@@ -1520,12 +1520,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Left Joystick = Turning
+  m_text: 'Left Joystick = Movement
 
-    Right Joystick = Movement
+    Left Joystick (Hold) = Sprint
 
-    Select Button
-    = Select
+    Right
+    Joystick = Turning
 
     Activate Button = Grabing
 
