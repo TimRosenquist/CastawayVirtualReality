@@ -49790,9 +49790,9 @@ MonoBehaviour:
 
     - Jump Scare in cave
 
+    -
+    Easter eggs
 
-    Easter
-    eggs
 
     Light settings
 
@@ -51728,10 +51728,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Event-system\r\nInventory system\r\nRaft Construction\r\nMap function\r\nScript\r\n-
+  m_text: "Event-system\r\nInventory system\r\nRaft Construction\r\nMap function\r\n\nScript\r\n-
     GameEvent / GameEventListener\n- DisplayOutOfRange / OutOfRangeZone\n\r- MapCamera\n-
     InventorySlot / InventorySummon / Item\r\n- MaterialsManager / LogMaterialChange\n-
-    WaterDripParticleAudio\n\nParticle effects\r\n-Fire\r\n- Smoke\r\n- Cave drops\r\n\n"
+    WaterDripParticleAudio\n\nParticle effects\r\n- Fire\r\n- Smoke\r\n- Cave drops\r\n\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -51981,7 +51981,6 @@ MonoBehaviour:
     - Denied
     sound
 
-    
 
     Animations
 
@@ -75812,6 +75811,7 @@ MonoBehaviour:
 
     Guide / Walkthrough
 
+
     Level Design
 
     -
@@ -75819,33 +75819,33 @@ MonoBehaviour:
 
     - Cave system (Made in Blender)
 
-    - Volcano (Terrain
-    tools)
+    - Volcano (Terrain tools)
 
-    - Vegetation and enviromental objects (various assets)
+    -
+    Vegetation and enviromental objects (various assets)
 
-    - Plane
-    wreck (asset)
+    - Plane wreck (asset)
 
-    - Rope (asset)
+    -
+    Rope (asset)
 
     - Skeleton in the cave (asset)
 
-    -
-    Flashlight with grab interactable and attach point (Made in Unity)
+    - Flashlight with grab
+    interactable and attach point (Made in Unity)
 
-    - Torch
-    (assets with our own particle effects)
+    - Torch (assets with our own
+    particle effects)
 
     - Whale (asset)
 
-    - Easter eggs
-    (various assets)
+    - Easter eggs (various assets)
 
 
     Script
 
-    - SoundTrigger
+    -
+    SoundTrigger
 
     - TreeCutting
 
@@ -76768,9 +76768,36 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "GitMaster\r\nXR Origin\r\nXR Climbing function\r\nHand Animations (BlendTree)\r\nGrabable
-    Layer\r\nLevel Design\r\n- \nAxe with grab interactable and attach point (asset)\r\nScript\r\n-
-    PlayerSprint\r\n- SpawnPlayer\r\n- XROffsetGrabbing\r\n\n\n"
+  m_text: 'GitMaster
+
+    XR Origin
+
+    XR Climbing function
+
+    Hand Animations
+    (BlendTree)
+
+    Grabable Layer
+
+
+    Level Design
+
+    Axe with grab interactable
+    and attach point (asset)
+
+
+    Script
+
+    - PlayerSprint
+
+    - SpawnPlayer
+
+    -
+    XROffsetGrabbing
+
+
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -78798,7 +78825,9 @@ MonoBehaviour:
 
     Ingame Menu
 
+
     Invisible walls
+
 
     Level
     Design
@@ -78807,18 +78836,18 @@ MonoBehaviour:
 
     - Spiders (asset)
 
-    - Frogs
-    (asset)
+    - Frogs (asset)
 
 
     Script
 
-    - GameMenuManager / SetMoveType / SetTurnType
-
     -
-    SceneLoader
+    GameMenuManager / SetMoveType / SetTurnType
 
-    - Animal Animation Scripts
+    - SceneLoader
+
+    - Animal
+    Animation Scripts
 
 '
   m_isRightToLeft: 0
