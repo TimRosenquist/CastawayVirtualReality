@@ -20,6 +20,7 @@ namespace GameEventSystem
         
         public void ChangeMaterial()
         {
+            // Changes the logs "blueprint" materials when the player builds the raft
             _logRenderer.sharedMaterial = _logMaterial[1];
         }
     }
