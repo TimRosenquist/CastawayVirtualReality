@@ -21910,43 +21910,43 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7964224587920497024, guid: 9bea37a46016da449acb7b5d4907409e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 601.6
+      value: 558.30035
       objectReference: {fileID: 0}
     - target: {fileID: 7964224587920497024, guid: 9bea37a46016da449acb7b5d4907409e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 120.938
+      value: 121.9539
       objectReference: {fileID: 0}
     - target: {fileID: 7964224587920497024, guid: 9bea37a46016da449acb7b5d4907409e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 734.92
+      value: 416.30765
       objectReference: {fileID: 0}
     - target: {fileID: 7964224587920497024, guid: 9bea37a46016da449acb7b5d4907409e, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.99895203
+      value: -0.99987495
       objectReference: {fileID: 0}
     - target: {fileID: 7964224587920497024, guid: 9bea37a46016da449acb7b5d4907409e, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.03673467
+      value: 0.012276147
       objectReference: {fileID: 0}
     - target: {fileID: 7964224587920497024, guid: 9bea37a46016da449acb7b5d4907409e, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.0010033146
+      value: -0.009647207
       objectReference: {fileID: 0}
     - target: {fileID: 7964224587920497024, guid: 9bea37a46016da449acb7b5d4907409e, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.02728385
+      value: -0.002526244
       objectReference: {fileID: 0}
     - target: {fileID: 7964224587920497024, guid: 9bea37a46016da449acb7b5d4907409e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 4.212
+      value: -1.41
       objectReference: {fileID: 0}
     - target: {fileID: 7964224587920497024, guid: 9bea37a46016da449acb7b5d4907409e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 361.102
       objectReference: {fileID: 0}
     - target: {fileID: 7964224587920497024, guid: 9bea37a46016da449acb7b5d4907409e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 3.129
+      value: 0.276
       objectReference: {fileID: 0}
     - target: {fileID: 7964224587920497025, guid: 9bea37a46016da449acb7b5d4907409e, type: 3}
       propertyPath: refToSpawnedObject
@@ -24632,44 +24632,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 610833589}
   m_CullTransparentMesh: 1
---- !u!1 &611271196 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1000013427078568, guid: f94554303b4f7094ea5e12fe79985529, type: 3}
-  m_PrefabInstance: {fileID: 69929145}
-  m_PrefabAsset: {fileID: 0}
---- !u!64 &611271200
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 611271196}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300006, guid: 6013a9231cbf28447817bbf406307ad6, type: 3}
---- !u!1 &612062183 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1000013155481704, guid: d7ba4fe833670a140b9b6085652f0e26, type: 3}
-  m_PrefabInstance: {fileID: 751031447}
-  m_PrefabAsset: {fileID: 0}
---- !u!64 &612062187
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 612062183}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300006, guid: 05e04fedc78047c48af519e94c595e13, type: 3}
 --- !u!1 &613284699
 GameObject:
   m_ObjectHideFlags: 0
@@ -41424,25 +41386,6 @@ CapsuleCollider:
   m_Height: 15.832032
   m_Direction: 1
   m_Center: {x: 0.01979283, y: 7.4160156, z: -0.06923131}
---- !u!1 &935272442 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1000013155481704, guid: d7ba4fe833670a140b9b6085652f0e26, type: 3}
-  m_PrefabInstance: {fileID: 2007598623}
-  m_PrefabAsset: {fileID: 0}
---- !u!64 &935272446
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 935272442}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300006, guid: 05e04fedc78047c48af519e94c595e13, type: 3}
 --- !u!1001 &941463973
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -49576,25 +49519,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: cd04206a30c78e84fbc449686e6b254c, type: 3}
   m_PrefabInstance: {fileID: 1310494181}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1318264764 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1000013427078568, guid: f94554303b4f7094ea5e12fe79985529, type: 3}
-  m_PrefabInstance: {fileID: 42152548}
-  m_PrefabAsset: {fileID: 0}
---- !u!64 &1318264768
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1318264764}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300006, guid: 6013a9231cbf28447817bbf406307ad6, type: 3}
 --- !u!1 &1319085263 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: f9dd7fe3eb55de54f88147787e8834c6, type: 3}
@@ -49790,9 +49714,9 @@ MonoBehaviour:
 
     - Jump Scare in cave
 
+    -
+    Easter eggs
 
-    Easter
-    eggs
 
     Light settings
 
@@ -51728,10 +51652,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Event-system\r\nInventory system\r\nRaft Construction\r\nMap function\r\nScript\r\n-
+  m_text: "Event-system\r\nInventory system\r\nRaft Construction\r\nMap function\r\n\nScript\r\n-
     GameEvent / GameEventListener\n- DisplayOutOfRange / OutOfRangeZone\n\r- MapCamera\n-
     InventorySlot / InventorySummon / Item\r\n- MaterialsManager / LogMaterialChange\n-
-    WaterDripParticleAudio\n\nParticle effects\r\n-Fire\r\n- Smoke\r\n- Cave drops\r\n\n"
+    WaterDripParticleAudio\n\nParticle effects\r\n- Fire\r\n- Smoke\r\n- Cave drops\r\n\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -51981,7 +51905,6 @@ MonoBehaviour:
     - Denied
     sound
 
-    
 
     Animations
 
@@ -60657,25 +60580,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300002, guid: 476d7e24f53ccf641805646d05f61bde, type: 3}
---- !u!1 &1577716927 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1000013155481704, guid: d7ba4fe833670a140b9b6085652f0e26, type: 3}
-  m_PrefabInstance: {fileID: 151522316}
-  m_PrefabAsset: {fileID: 0}
---- !u!64 &1577716931
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1577716927}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300006, guid: 05e04fedc78047c48af519e94c595e13, type: 3}
 --- !u!1 &1581287121
 GameObject:
   m_ObjectHideFlags: 0
@@ -73913,25 +73817,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 51998da9a72fad846a174b99dfb692d7, type: 3}
---- !u!1 &1791226928 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1000013742746218, guid: 75fa8bf3a73ee6b4da0c7a2c6d3db6a1, type: 3}
-  m_PrefabInstance: {fileID: 859561123}
-  m_PrefabAsset: {fileID: 0}
---- !u!64 &1791226932
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1791226928}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300006, guid: 48320e7576ce0664eb501ebbd6c815da, type: 3}
 --- !u!1 &1793455314
 GameObject:
   m_ObjectHideFlags: 0
@@ -75812,6 +75697,7 @@ MonoBehaviour:
 
     Guide / Walkthrough
 
+
     Level Design
 
     -
@@ -75819,33 +75705,33 @@ MonoBehaviour:
 
     - Cave system (Made in Blender)
 
-    - Volcano (Terrain
-    tools)
+    - Volcano (Terrain tools)
 
-    - Vegetation and enviromental objects (various assets)
+    -
+    Vegetation and enviromental objects (various assets)
 
-    - Plane
-    wreck (asset)
+    - Plane wreck (asset)
 
-    - Rope (asset)
+    -
+    Rope (asset)
 
     - Skeleton in the cave (asset)
 
-    -
-    Flashlight with grab interactable and attach point (Made in Unity)
+    - Flashlight with grab
+    interactable and attach point (Made in Unity)
 
-    - Torch
-    (assets with our own particle effects)
+    - Torch (assets with our own
+    particle effects)
 
     - Whale (asset)
 
-    - Easter eggs
-    (various assets)
+    - Easter eggs (various assets)
 
 
     Script
 
-    - SoundTrigger
+    -
+    SoundTrigger
 
     - TreeCutting
 
@@ -76768,9 +76654,36 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "GitMaster\r\nXR Origin\r\nXR Climbing function\r\nHand Animations (BlendTree)\r\nGrabable
-    Layer\r\nLevel Design\r\n- \nAxe with grab interactable and attach point (asset)\r\nScript\r\n-
-    PlayerSprint\r\n- SpawnPlayer\r\n- XROffsetGrabbing\r\n\n\n"
+  m_text: 'GitMaster
+
+    XR Origin
+
+    XR Climbing function
+
+    Hand Animations
+    (BlendTree)
+
+    Grabable Layer
+
+
+    Level Design
+
+    Axe with grab interactable
+    and attach point (asset)
+
+
+    Script
+
+    - PlayerSprint
+
+    - SpawnPlayer
+
+    -
+    XROffsetGrabbing
+
+
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -78798,7 +78711,9 @@ MonoBehaviour:
 
     Ingame Menu
 
+
     Invisible walls
+
 
     Level
     Design
@@ -78807,18 +78722,18 @@ MonoBehaviour:
 
     - Spiders (asset)
 
-    - Frogs
-    (asset)
+    - Frogs (asset)
 
 
     Script
 
-    - GameMenuManager / SetMoveType / SetTurnType
-
     -
-    SceneLoader
+    GameMenuManager / SetMoveType / SetTurnType
 
-    - Animal Animation Scripts
+    - SceneLoader
+
+    - Animal
+    Animation Scripts
 
 '
   m_isRightToLeft: 0
