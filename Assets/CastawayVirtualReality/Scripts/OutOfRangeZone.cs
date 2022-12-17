@@ -13,12 +13,14 @@ namespace GameEventSystem
 
         private void OnTriggerEnter(Collider other)
         {
-            if (other.gameObject.name == "MapTablet v.2") DisplayDisconnected.TriggerEvent();
+            // Disconnects the map from the drone when the map enters the cave
+            if (other.gameObject.name == "MapTablet") DisplayDisconnected.TriggerEvent();
         }
 
         private void OnTriggerExit(Collider other)
         {
-            if (other.gameObject.name == "MapTablet v.2") DisplayConnected.TriggerEvent();
+            // Connects the map to the drone when the map exits the cave
+            if (other.gameObject.name == "MapTablet") DisplayConnected.TriggerEvent();
         }
     }
 }

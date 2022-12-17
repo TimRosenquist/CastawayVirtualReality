@@ -1,7 +1,3 @@
-// Script name: InventoryVR
-// Script purpose: attaching a gameobject to a certain anchor and having the ability to enable and disable it.
-// This script is a property of Realary, Inc
-
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -14,18 +10,14 @@ public class InventorySummon : MonoBehaviour
     public GameObject Anchor;
     public GameObject HideAnchor;
     bool InventoryActive;
-    //public bool isActive;
 
-    //public InputActionReference inventoryReference = null;
     private XRIDefaultInputActions inputActions;
     private InputAction inventoryButton;
 
     private void Start()
     {
-        //Inventory.SetActive(false);
+        // Sets the inventory status to "disabled" at start
         InventoryActive = false;
-        //Inventory.transform.position = TempAnchor.transform.position;
-        //isActive = false;
     }
 
     private void OnEnable()
@@ -45,17 +37,17 @@ public class InventorySummon : MonoBehaviour
 
     private void InventoryToggle(InputAction.CallbackContext context)
     {
+        // Toggles the inventory
         InventoryActive = !InventoryActive;
-        //Inventory.SetActive(UIActive);
 
-        //isActive = !isActive;
-
+        // Places the inventory on the hand anchor when the inventory gets activated and rotates it upward
         if (InventoryActive)
         {
             Inventory.transform.position = Anchor.transform.position;
             Inventory.transform.SetParent(Anchor.transform);
             Inventory.transform.eulerAngles = new Vector3(Anchor.transform.eulerAngles.x + 15, Anchor.transform.eulerAngles.y, 0);
         }
+        // Removes the inventory from the hand anchor when the inventory gets deactivated
         else
         {
             Inventory.transform.position = HideAnchor.transform.position;
