@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3653538700315059352}
   - component: {fileID: 3653538700315059353}
   m_Layer: 0
-  m_Name: Volcano Smoke v.2
+  m_Name: VolcanoSmoke v
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

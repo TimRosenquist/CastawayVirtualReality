@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
-namespace CastawayVirtualReality
+namespace Player
 {
     //Inherent the class XRGrabInteractable
 public class XROffsetGrabbing : XRGrabInteractable

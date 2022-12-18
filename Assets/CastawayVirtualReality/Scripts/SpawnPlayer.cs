@@ -2,16 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpawnPlayer : MonoBehaviour
+namespace Player
 {
-    [SerializeField]
-    private GameObject refToSpawnedObject;
-
-    // Start is called before the first frame update
-    void Start()
+    public class SpawnPlayer : MonoBehaviour
     {
-        refToSpawnedObject.transform.position = transform.position;
-    }
+        [SerializeField]
+        private GameObject refToSpawnedObject;
+
+        // Start is called before the first frame update
+        // Spawn player to this objects position
+        void Start()
+        {
+            refToSpawnedObject.transform.position = transform.position;
+        }
 
    
+    }
 }
+
+
