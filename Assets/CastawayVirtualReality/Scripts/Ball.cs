@@ -1,7 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-namespace CastawayVirtualReality
+
+namespace Items
 {
     //Add Components Audiosource and Rigidbody to gameobject
     [RequireComponent(typeof(AudioSource))]

@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.InputSystem;
 
+namespace Inventory
+{
 public class InventorySummon : MonoBehaviour
 {
     public GameObject Inventory;
@@ -54,4 +56,5 @@ public class InventorySummon : MonoBehaviour
             Inventory.transform.SetParent(null);
         }
     }
+}
 }
