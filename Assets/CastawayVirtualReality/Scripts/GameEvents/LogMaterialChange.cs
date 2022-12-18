@@ -1,0 +1,28 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+namespace GameEventSystem
+{
+    public class LogMaterialChange : MonoBehaviour
+    {
+        // Allows for storing multiple materials on object
+        [SerializeField]
+        private Material[] _logMaterial;
+
+        private Renderer _logRenderer;
+
+        void Start()
+        {
+            _logRenderer = GetComponent<Renderer>();
+            _logRenderer.enabled = true;
+            _logRenderer.sharedMaterial = _logMaterial[0];
+        }
+
+        public void ChangeMaterial()
+        {
+            // Changes the logs "blueprint" materials when the player builds the raft
+            _logRenderer.sharedMaterial = _logMaterial[1];
+        }
+    }
+}

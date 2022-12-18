@@ -1,7 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-namespace CastawayVirtualReality
+
+namespace Items
 {
     //Add Components Audiosource and Rigidbody to gameobject
     [RequireComponent(typeof(AudioSource))]
@@ -15,7 +16,7 @@ namespace CastawayVirtualReality
         // Start is called before the first frame update
         void Start()
         {
-            //Enable audiosource in script
+            //Enable audiosource component in script
             audioSource = GetComponent<AudioSource>();
         }
         //Audio will play when object collide

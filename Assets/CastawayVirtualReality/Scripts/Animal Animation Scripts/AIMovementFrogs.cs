@@ -4,39 +4,41 @@ using UnityEngine;
 
 namespace AI
 {
-    [RequireComponent(typeof(Rigidbody))]
+    [RequireComponent(typeof(Rigidbody))] // This line of code is like a failsafe code to make sure the gameobject has a RigidBody
     public class AIMovementFrogs : MonoBehaviour
     {
         [SerializeField]
-        private Animator _animationController;
+        private Animator _animationController; // Lets you choose what animation controller you wanna use for the specific animal
 
         [SerializeField]
-        private float _movementSpeed = 20f;
+        private float _movementSpeed = 20f; // Defines the movement speed for the animal that you can change in the inspector window
 
         [SerializeField]
-        private float _rotationSpeed = 100f;
+        private float _rotationSpeed = 100f; // Defines the rotation speed for the animal that you can change in the inspector window
 
-
+        // Defining some bool values that we are gonna check wether they are true or not alter on in the code
         private bool _isMoving;
         private bool _isRotatingLeft;
         private bool _isRotatingRight;
         private bool _isWandering;
 
-        Rigidbody rb;
+        Rigidbody rb; // Creates a RigidBody vairable called rb
 
         void Start()
         {
             rb = GetComponent<Rigidbody>();
         }
 
-
+        // In Update we check wether one of the booleans values are true or false. If they are true, they will return a specific movement type
+        // and the specific animation chosen in the inspector window, switching it's bool value between true and false. It will then start a Coroutine
+        // from the Wander function and at the same time play a specific animation if the animation value is true.
         void Update()
         {
             if (_isWandering == false)
             {
                 _animationController.SetBool("Idle" ,true);
-                StartCoroutine(Wander());
-                
+                StartCoroutine(Wander()); // If the animal stands still this code will call a function called Wander.
+
             }
 
             if (_isRotatingRight == true)
@@ -60,6 +62,8 @@ namespace AI
             }
         }
 
+        // The wander function is a IEnumerator where we define some int variables with  a random number between 1-3 and 1-2 for a more
+        // random/more natural movement of the gameobject. Which we later on send to Update.
         IEnumerator Wander()
         {
             int rotationTime = Random.Range(1, 3);

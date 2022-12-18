@@ -16,7 +16,7 @@ MonoBehaviour:
   - Default
   - Climbable
   - Cuttable
-  - Offset grab
+  - OffsetGrab
   - 
   - 
   - 

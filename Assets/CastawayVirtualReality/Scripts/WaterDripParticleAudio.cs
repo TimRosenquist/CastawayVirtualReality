@@ -6,6 +6,7 @@ namespace ParticleAudio
 {
     public class WaterDripParticleAudio : MonoBehaviour
     {
+        // variable for the amount of particles that currently exist in order to check if a particle has disapeared
         private int _currentNumberOfParticles = 0;
 
         private ParticleSystem _particleSystem;
