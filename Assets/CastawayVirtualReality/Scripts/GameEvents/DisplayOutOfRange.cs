@@ -6,6 +6,7 @@ namespace GameEventSystem
 {
     public class DisplayOutOfRange : MonoBehaviour
     {
+        // Allows for storing multiple materials on object
         [SerializeField]
         private Material[] _material;
 
@@ -13,6 +14,7 @@ namespace GameEventSystem
 
         void Start()
         {
+            // Gets renderer from object
             _renderer = GetComponent<Renderer>();
             _renderer.enabled = true;
             // Sets the map screen to the drone camera at start

@@ -7,16 +7,16 @@ namespace GameEventSystem
 {
     public class InventorySlot : MonoBehaviour
     {
+        // Class for the socket, the object that latest interacted with the socket and a gameobject class for the object in order to manipulate it better
         XRSocketInteractor socket;
         IXRSelectInteractable objInSocket;
         GameObject obj;
 
+        // GameEvents for when certain objects gets put in or removed from inventory
         public GameEvent logCountIncrease;
         public GameEvent logCountDecrease;
         public GameEvent RopeCountIncrease;
         public GameEvent RopeCountDecrease;
-
-        private int logCount;
 
         void Start()
         {
