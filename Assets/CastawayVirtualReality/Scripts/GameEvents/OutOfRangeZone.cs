@@ -6,6 +6,7 @@ namespace GameEventSystem
 {
     public class OutOfRangeZone : MonoBehaviour
     {
+        // Game events for when the maptablet enters and exits the "out of reach zone"
         [SerializeField]
         private GameEvent DisplayDisconnected;
         [SerializeField]

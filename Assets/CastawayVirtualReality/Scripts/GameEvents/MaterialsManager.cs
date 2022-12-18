@@ -6,19 +6,23 @@ namespace GameEventSystem
 {
     public class MaterialsManager : MonoBehaviour
     {
+        // Stores the amount of certain important items that are in the inventory
         private int logCount = 0;
         private int ropeCount = 0;
 
+        // Gamobject for the raft, animation for pushing the raft to the water and a game event for changing the rafts material
         [SerializeField]
         private GameObject raft;
         private Animator raftAnimator;
         public GameEvent changeRaftmaterial;
 
+        // Audio for building the raft
         [SerializeField]
         private AudioSource raftSource;
         [SerializeField]
         private AudioClip raftClip;
 
+        // Audio for attempting to build the raft if the player doesn't have enough materials
         [SerializeField]
         private AudioSource deniedSource;
         [SerializeField]
@@ -26,9 +30,11 @@ namespace GameEventSystem
         [SerializeField]
         private GameObject raftButton;
 
+        // Credits that will display each developers contributions when the raft has been built
         [SerializeField]
         private GameObject credits;
 
+        // GameObjects that will get disabled when the raft is built
         [SerializeField]
         private GameObject log_1;
         [SerializeField]

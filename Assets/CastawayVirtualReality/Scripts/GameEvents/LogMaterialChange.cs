@@ -6,6 +6,7 @@ namespace GameEventSystem
 {
     public class LogMaterialChange : MonoBehaviour
     {
+        // Allows for storing multiple materials on object
         [SerializeField]
         private Material[] _logMaterial;
 
