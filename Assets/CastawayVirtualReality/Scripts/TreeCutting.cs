@@ -12,14 +12,12 @@ namespace ChoppingTrees
         [SerializeField] public GameObject axe; // the axe
         private int cutCount; // the number of times the tree has been hit
         public AudioClip ChopSound; // the sound to play when the axe hits the tree
-        private Rigidbody rigidBody;
-        AudioSource audioSource;
+        AudioSource audioSource; // the source the audioclip will originate from
 
         void Start()
         {
             // get the audio source component on the axe
             audioSource = GetComponent<AudioSource>();
-            rigidBody = axe.GetComponent<Rigidbody>();
         }
 
         private void OnCollisionEnter(Collision collision)
